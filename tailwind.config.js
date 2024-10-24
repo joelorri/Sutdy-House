@@ -6,14 +6,23 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'ButtonColor': '#7BDCB5',
+      'hoverColor': '#1ABC9C',
+      'bgColor': '#F9EAE1',
+      'mentaColor': '#1ABC9C',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+
+      //    /* Aplicar la fuente Rubik Mono One */
+    // .font-rubik {
+    //   font-family: 'Rubik Mono One', sans-serif;
+    // }
+    // /* Estilo para el borde dashed */
+    // .border-dashed-custom {
+    //   border-bottom: 4px dashed #1ABC9C; /* Cambiar el color del borde aquí */
+    // }
     },
   },
   plugins: [],

@@ -35,13 +35,42 @@
       </div>
   
       <!-- Right Section: Menu -->
-      <nav>
-        <button class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button> 
+      <nav class="relative">
+        <button onclick="toggleMenu()" class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-10">
+          <ul class="py-2">
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Crea El teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita el Teu Perfil</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita El Teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Els meus habitatges</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Notificacions</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
     <!-- Borde Dashed con color personalizado -->
     <div class="absolute left-0 bottom-0 w-full border-dashed-custom"></div>
   </header>
+
+  <script>
+    function toggleMenu() {
+      const dropdown = document.getElementById("dropdown");
+      dropdown.classList.toggle("hidden");
+    }
+    
+    // Cerrar el menú si se hace clic fuera de él
+    window.onclick = function(event) {
+      if (!event.target.matches('.text-xl')) {
+        const dropdowns = document.getElementsByClassName("absolute");
+        for (let i = 0; i < dropdowns.length; i++) {
+          const openDropdown = dropdowns[i];
+          if (!openDropdown.classList.contains('hidden')) {
+            openDropdown.classList.add('hidden');
+          }
+        }
+      }
+    }
+  </script>
 
 </body>
 </html>
