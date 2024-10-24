@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./index.html"],
+  content: ["./public/**/*.html", "./App/*.html"],
   theme: {
     extend: {},
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'ButtonColor': '#7BDCB5',
-      'hoverColor': '#1ABC9C',
-      'bgColor': '#F9EAE1',
-      'mentaColor': '#1ABC9C',
+      'green': '#7BDCB5',
+      'darkGreen': '#1ABC9C',
+      'whiteBackgroun': '#F9EAE1',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
