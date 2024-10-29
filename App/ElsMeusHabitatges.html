@@ -9,47 +9,56 @@
 </head>
 
 <body class="bg-cover bg-center " style="background-image: url('img/ProjecteUF1StudyHouse.png');">
-  <header class="bg-hoverColor py-2 relative">
-    <div class="w-full px-1 flex justify-between items-center">
+  <header class="bg-green py-2 relative">
+    <div class="w-full px-1 flex justify-between items-center"> 
       <div class="flex items-center">
         <div class="mr-2">
-          <img src="./img/house-plants.png" alt="Sutdy House Logo" class="hidden sm:block h-12 w-12 sm:h-14 sm:w-14">
+          <img src="./img/house-plants.png" alt="Sutdy House Logo" class="hidden sm:block h-12 w-12 sm:h-14 sm:w-14"> 
         </div>
-        <h1 class="text-3xl sm:text-4xl font-bold text-black font-rubik">SUTDY HOUSE</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-black font-rubik">SUTDY HOUSE</h1> 
       </div>
-      <nav>
-        <button class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button>
+  
+      <nav class="relative">
+        <button onclick="toggleMenu()" class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-whiteContainer rounded-lg shadow-lg z-10">
+          <ul class="py-2">
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Crea El teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita el Teu Perfil</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita El Teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Els meus habitatges</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Notificacions</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
     <div class="absolute left-0 bottom-0 w-full border-dashed-custom"></div>
   </header>
 
 <div class="container mx-auto mt-8 space-y-6 sm:p-6 ">
-  <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center ">
+  <div class="bg-whiteContainer rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center ">
     <div class="flex flex-col sm:flex-row items-center">
       <div class="w-full sm:w-32 h-32 rounded-2xl overflow-hidden mr-6">
         <img src="../App/img/img_blog.png" alt="Property Image" class="object-cover w-full h-full">
       </div>
       <div class="mt-4 sm:mt-0">
-        <p class="text-gray-600"><strong>Ubicació:</strong> Carrer Collsecabra 22</p>
-        <p class="text-gray-600"><strong>Propietari:</strong> Miquel López</p>
-        <p class="text-gray-600"><strong>Tasques pendents:</strong></p>
-        <ul class="list-disc list-inside text-gray-600">
+        <p><strong>Ubicació:</strong> Carrer Collsecabra 22</p>
+        <p><strong>Propietari:</strong> Miquel López</p>
+        <p><strong>Tasques pendents:</strong></p>
+        <ul class="list-disc list-inside">
           <li>Pintar Cuina</li>
           <li>Millorar pati</li>
         </ul>
-        <p class="text-gray-600"><strong>Lloguer mensual:</strong> 250€</p>
+        <p><strong>Lloguer mensual:</strong> 250€</p>
       </div>
     </div>
-    <!-- Requests Button -->
     <div class="text-center mt-4 sm:mt-0">
-      <p class="text-gray-700 mb-2">Peticions pendents 4</p>
-      <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Veure Peticions</button>
+      <p class="mb-2">Peticions pendents 4</p>
+      <button class="bg-green text-white px-4 py-2 rounded hover:bg-darkGreen">Veure Peticions</button>
     </div>
   </div>
 
   <!-- Property Card 2 -->
-  <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center">
+  <div class="bg-whiteContainer rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center">
     <div class="flex flex-col sm:flex-row items-center">
       <!-- Image Placeholder -->
       <div class="w-full sm:w-32 h-32 rounded-2xl overflow-hidden mr-6">
@@ -57,25 +66,48 @@
       </div>
       <!-- Property Details -->
       <div class="mt-4 sm:mt-0">
-        <p class="text-gray-600"><strong>Ubicació:</strong> Carrer Montseny 12</p>
-        <p class="text-gray-600"><strong>Propietari:</strong> Miquel López</p>
-        <p class="text-gray-600"><strong>Tasques pendents:</strong></p>
-        <ul class="list-disc list-inside text-gray-600">
+        <p><strong>Ubicació:</strong> Carrer Montseny 12</p>
+        <p><strong>Propietari:</strong> Miquel López</p>
+        <p><strong>Tasques pendents:</strong></p>
+        <ul class="list-disc list-inside">
           <li>Pintar Habitació principal</li>
           <li>Canviar la porta del garatge</li>
         </ul>
-        <p class="text-gray-600"><strong>Lloguer mensual:</strong> 300€</p>
+        <p><strong>Lloguer mensual:</strong> 300€</p>
       </div>
     </div>
     <!-- Requests Button -->
     <div class="text-center mt-4 sm:mt-0">
-      <p class="text-gray-700 mb-2">Peticions pendents 4</p>
-      <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Veure Peticions</button>
+      <p class="mb-2">Peticions pendents 4</p>
+      <button class="bg-green text-white px-4 py-2 rounded hover:bg-darkGreen">Veure Peticions</button>
     </div>
   </div>
-
+ <div class="bg-whiteContainer rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center">
+    <div class="flex flex-col sm:flex-row items-center">
+      <!-- Image Placeholder -->
+      <div class="w-full sm:w-32 h-32 rounded-2xl overflow-hidden mr-6">
+        <img src="../App/img/img_blog.png" alt="Property Image" class="object-cover w-full h-full">
+      </div>
+      <!-- Property Details -->
+      <div class="mt-4 sm:mt-0">
+        <p><strong>Ubicació:</strong> Carrer Montseny 12</p>
+        <p><strong>Propietari:</strong> Miquel López</p>
+        <p><strong>Tasques pendents:</strong></p>
+        <ul class="list-disc list-inside">
+          <li>Pintar Habitació principal</li>
+          <li>Canviar la porta del garatge</li>
+        </ul>
+        <p><strong>Lloguer mensual:</strong> 300€</p>
+      </div>
+    </div>
+    <!-- Requests Button -->
+    <div class="text-center mt-4 sm:mt-0">
+      <p class="mb-2">Peticions pendents 4</p>
+      <button class="bg-green text-white px-4 py-2 rounded hover:bg-darkGreen">Veure Peticions</button>
+    </div>
+  </div>
   <!-- Property Card 3 -->
-  <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center">
+  <div class="bg-whiteContainer rounded-2xl shadow-md p-6 flex flex-col sm:flex-row justify-between items-center">
     <div class="flex flex-col sm:flex-row sm:mx-4 items-center ">
       <!-- Image Placeholder -->
       <div class="w-full sm:w-32 h-32 rounded-2xl overflow-hidden mr-6">
@@ -83,24 +115,40 @@
       </div>
       <!-- Property Details -->
       <div>
-        <p class="text-gray-600"><strong>Ubicació:</strong> Carrer del Bosc 8</p>
-        <p class="text-gray-600"><strong>Propietari:</strong> Miquel López</p>
-        <p class="text-gray-600"><strong>Tasques pendents:</strong></p>
-        <ul class="list-disc list-inside text-gray-600">
+        <p><strong>Ubicació:</strong> Carrer del Bosc 8</p>
+        <p><strong>Propietari:</strong> Miquel López</p>
+        <p><strong>Tasques pendents:</strong></p>
+        <ul class="list-disc list-inside">
           <li>Instal·lar aire condicionat</li>
           <li>Reparar canonades</li>
         </ul>
-        <p class="text-gray-600"><strong>Lloguer mensual:</strong> 275€</p>
+        <p><strong>Lloguer mensual:</strong> 275€</p>
       </div>
     </div>
     <!-- No Requests -->
     <div class="text-center">
-      <p class="text-gray-700 mb-2">No hi han peticions pendents -</p>
+      <p>No hi han peticions pendents -</p>
     </div>
   </div>
 </div>
 
-
+<script>
+  function toggleMenu() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("hidden");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.text-xl')) {
+      const dropdowns = document.getElementsByClassName("absolute");
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (!openDropdown.classList.contains('hidden')) {
+          openDropdown.classList.add('hidden');
+        }
+      }
+    }
+  }
+</script>
 </body>
-
 </html>
