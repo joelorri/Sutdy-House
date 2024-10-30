@@ -10,6 +10,8 @@ module.exports = {
       'darkGreen': '#1ABC9C',
       'whiteBackgroun': '#F9EAE1',
       'whiteContainer': '#fafafa',
+      'grey': '#d4d4d4',
+      'darkGrey': '#a1a1a1'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -21,6 +23,10 @@ module.exports = {
     //   font-family: 'Rubik Mono One', sans-serif;
     // }
     // /* Estilo para el borde dashed */
+    },
+    backgroundImage: {
+      'main': "url('/App/img/fonsMainMenu.png')",
+      'smallMain': "url('/App/img/fonsMainMenuSmall.png)",
     },
   },
   plugins: [],

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Sutdy House</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-cover bg-whiteBackgroun">
+  <header class="bg-green py-2 relative">
+    <div class="w-full px-1 flex justify-between items-center"> 
+      <div class="flex items-center">
+        <div class="mr-2">
+          <img src="./img/house-plants.png" alt="Sutdy House Logo" class="hidden sm:block h-12 w-12 sm:h-14 sm:w-14"> 
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-black font-rubik">SUTDY HOUSE</h1> 
+      </div>
+  
+      <nav class="relative">
+        <button onclick="toggleMenu()" class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-whiteContainer rounded-lg shadow-lg z-10">
+          <ul class="py-2">
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Crea El teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita el Teu Perfil</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita El Teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Els meus habitatges</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Notificacions</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="absolute left-0 bottom-0 w-full border-dashed-custom"></div>
+  </header>
+  <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:w-1/2 mt-16 ml-16 mr-32">
+      <h1 class="text-xl font-bold">Qui som?</h1>
+      <p class="mb-6">
+        El nostre objectiu és facilitar l'accés a habitatges més assequibles mitjançant un model de col·laboració entre propietaris i inquilins. 
+      </p>
+      <p class="mb-6">
+        Aquest sistema permet que el propietari ofereixi un lloguer a un preu més reduït a canvi que els inquilins es comprometin a col·laborar en tasques de millora o reforma de l'immoble.
+      </p>
+      <p class="mb-6">
+        D’aquesta manera, es promou una relació de benefici mutu, on el propietari veu revaloritzada la seva propietat i els inquilins poden accedir a un habitatge a un cost més assequible.
+      </p>
+      <button class="bg-green hover:bg-darkGreen w-32 h-10 rounded-xl border">Formar-ne part</button>
+    </div>
+    <div class="flex flex-col pb-6 w-full  md:w-1/2 mt-16 h-full items-center">
+      <div class="border md:mr-20">
+        <img src="./img/img_blog.png" alt="Imatge Persones" class="bg-cover">
+      </div>
+      <button class="bg-green hover:bg-darkGreen w-44 h-10 rounded-xl border mt-8">Buscar habitatges <i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+<script>
+  function toggleMenu() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("hidden");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.text-xl')) {
+      const dropdowns = document.getElementsByClassName("absolute");
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (!openDropdown.classList.contains('hidden')) {
+          openDropdown.classList.add('hidden');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
