@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sutdy House</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-cover bg-center " style="background-image: url('img/ProjecteUF1StudyHouse.png');">
+  <header class="bg-green py-2 relative">
+    <div class="w-full px-1 flex justify-between items-center"> 
+      <div class="flex items-center">
+        <div class="mr-2">
+          <img src="./img/house-plants.png" alt="Sutdy House Logo" class="hidden sm:block h-12 w-12 sm:h-14 sm:w-14"> 
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-black font-rubik">SUTDY HOUSE</h1> 
+      </div>
+  
+      <nav class="relative">
+        <button onclick="toggleMenu()" class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU &#9776;</button>
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-whiteContainer rounded-lg shadow-lg z-10">
+          <ul class="py-2">
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Crea El teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita el Teu Perfil</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Edita El Teu Habitatge</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Els meus habitatges</a></li>
+            <li><a href="#" class="block px-4 py-2 text-black hover:bg-green-300">Notificacions</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="absolute left-0 bottom-0 w-full border-dashed-custom"></div>
+  </header>
+  <div class="grid grid-rows-4 grid-flow-col w-full gap-5 md:mt-10">
+    <div class="row-span-4 bg-whiteContainer h-[550px] md:max-w-[750px] md:ml-4 rounded-xl">
+        <div class="w-full h-64">
+            <img src="./img/img_blog.png" alt="Imatge Habitatge" class="w-full h-full object-cover px-6 pt-3">
+        </div>
+        <div class="mx-6 mt-3">
+            <p class="text-xl"><strong>Pis Gràcia</strong></p>
+            <div class="flex flex-row mt-2">
+                <div class="flex flex-col md:w-1/2">
+                    <p><strong>Informació Habitatge</strong></p>
+                    <p>Ubicació: Carrer Collsecabra 22</p>
+                    <p>Propietari: Miquel Lòpez</p>
+                    <p>Tasques pendents:</p>
+                    <ul>
+                        <li>Pintar Cuina</li>
+                        <li>Reformar Pati</li>
+                    </ul>
+                    <p>Lloguer Mensual: 250€</p>
+                </div>
+                <div class="flex flex-col md:w-1/2">
+                    <p><strong>Condicions</strong></p>
+                    <div class="flex flex-row">
+                        <div class="w-[auto] h-[auto]">
+                            <img src="./img/nofumar.png" alt="Imatge Habitatge" class="w-full h-full object-cover px-6 pt-3">
+                        </div>
+                        <div class="w-[auto] h-[auto]">
+                            <img src="./img/nogos.png" alt="Imatge Habitatge" class="w-full h-full object-cover px-6 pt-3">
+                        </div>
+                        <div class="w-[auto] h-[auto]">
+                            <img src="./img/nowifi.png" alt="Imatge Habitatge" class="w-full h-full object-cover px-6 pt-3">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="row-span-2 col-span-2 flex flex-col mr-3">
+        <p class="text-darkGreen text-xl text-center mb-2">Convivents</p>
+        <div class="flex flex-row justify-center gap-4">
+            <div class="flex flex-col md:w-1/5 bg-whiteContainer rounded-md justify-center items-center pt-4">
+                <div class="w-28 h-40">
+                    <img src="./img/fotoUsuari.png" alt="" class=" w-full h-full object-cover border">
+                </div>
+                <p>Roger Surroca</p>
+            </div>
+            <div class="flex flex-col md:w-1/5 bg-whiteContainer rounded-md justify-center items-center pt-4">
+                <div class="w-28 h-40">
+                    <img src="./img/fotoUsuari.png" alt="" class=" w-full h-full object-cover border">
+                </div>
+                <p>Roger Surroca</p>
+            </div>
+        </div>
+    </div>    
+    <div class="row-span-2 col-span-2 bg-whiteContainer rounded-lg mr-3">
+        <div class="m-6">
+            <p><strong>Descripció:</strong></p>
+            <p>El pis està al carrer Collsecabra 22, perfecte per a un estudiant. Té una cuina funcional però caldria pintar-la per modernitzar l'espai. Disposa d'un petit pati interior amb potencial, però necessita millores, com renovar el terra i afegir més plantes per fer-lo més acollidor. El pis és lluminós i amb una mica de reforma pot ser molt còmode. Ideal per algú que busqui tranquil·litat i proximitat als serveis.</p>
+        </div>
+    </div>
+
+  </div>
+
+<script>
+  function toggleMenu() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("hidden");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.text-xl')) {
+      const dropdowns = document.getElementsByClassName("absolute");
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (!openDropdown.classList.contains('hidden')) {
+          openDropdown.classList.add('hidden');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
