@@ -26,7 +26,7 @@ module.exports = {
     },
     backgroundImage: {
       'main': "url('/App/img/fonsMainMenu.png')",
-      'smallMain': "url('/App/img/fonsMainMenuSmall.png)",
+      'smallmain': "url('/App/img/fonsMainMenuSmall.png)",
     },
   },
   plugins: [],
