@@ -9,6 +9,10 @@ module.exports = {
       'green': '#7BDCB5',
       'darkGreen': '#1ABC9C',
       'whiteBackgroun': '#F9EAE1',
+      'whiteBackground': '#fff',
+      'BlackBackground': '#000',
+      'blueBackground': '#0084FF',
+      'redBackground': '#FF0000',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
