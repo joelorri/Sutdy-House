@@ -10,12 +10,9 @@
 
 
 <body class="bg-cover bg-center " style="background-image: url('img/ProjecteUF1StudyHouse.png');">
-
-  <!-- Header -->
   <header class="bg-green py-2 relative">
-    <div class="w-full px-1 flex justify-between items-center">
-      <!-- Left Section: Logo and Title -->
-      <div class="flex items-center">
+    <div href="../App/MainMenu.html" class="w-full px-1 flex justify-between items-center">
+      <div onclick="window.location.href='../App/MainMenu.html'" class="flex items-center">
         <!-- Logo -->
         <div class="mr-2">
           <img src="./img/house-plants.png" alt="Sutdy House Logo" class="hidden sm:block h-12 w-12 sm:h-14 sm:w-14">
@@ -24,30 +21,27 @@
         <h1 class="text-3xl sm:text-4xl font-bold text-black font-rubik">SUTDY HOUSE</h1>
       </div>
 
-      <!-- Right Section: Menu -->
       <nav class="relative">
         <button onclick="toggleMenu()" class="text-xl sm:text-2xl font-semibold text-black font-rubik">MENU
           &#9776;</button>
-        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-darkGreen rounded-lg shadow-lg z-10">
+        <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-whiteContainer rounded-lg shadow-lg z-10">
           <ul class="py-2">
-            <li><a href="#" class="block px-4 py-2 text-black hover:bg-darkGreen ">Crea El teu Habitatge</a>
+            <li><a href="../App/CreaHabitatge.html" class="block px-4 py-2 text-black hover:bg-green">Crea El teu
+                Habitatge</a></li>
+            <li><a href="../App/EditUser.html" class="block px-4 py-2 text-black hover:bg-green">Edita el Teu Perfil</a>
             </li>
-            <li><a href="#" class="block px-4 py-2 text-black hover:bg-darkGreen ">Edita el Teu Perfil</a>
+            <li><a href="../App/EditaHabitatge.html" class="block px-4 py-2 text-black hover:bg-green">Edita El Teu
+                Habitatge</a></li>
+            <li><a href="../App/ElsMeusHabitatges.html" class="block px-4 py-2 text-black hover:bg-green">Els meus
+                habitatges</a></li>
+            <li><a href="../App/notificaUsuari.html" class="block px-4 py-2 text-black hover:bg-green">Notificacions</a>
             </li>
-            <li><a href="#" class="block px-4 py-2 text-black hover:bg-darkGreen ">Edita El Teu
-                Habitatge</a>
-            </li>
-            <li><a href="#" class="block px-4 py-2 text-black hover:bg-darkGreen ">Els meus habitatges</a>
-            </li>
-            <li><a href="#" class="block px-4 py-2 text-black hover:bg-darkGreen ">Notificacions</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <!-- Borde Dashed con color personalizado -->
-    <div class="absolute left-0 bottom-0 w-full border-dashed-custom"></div>
+    <div class="absolute left-0 bottom-0 w-full border-dashed"></div>
   </header>
-
   <script>
     function toggleMenu() {
       const dropdown = document.getElementById("dropdown");
@@ -79,14 +73,14 @@
 
 
     <div
-      class=" bg-whiteBackground col-span-1 row-start-3 text-center text-darkGreen border border-darkGreen p-4 rounded-lg">
+      class=" bg-whiteBackground col-span-1 row-start-3 text-center text-darkGreen border border-darkGreen p-4 rounded-lg font-roboto">
       Avís: <div>Només es poden introduir un total de 5 imatges.</div>
     </div>
 
 
 
     <div
-      class="bg-whiteBackground border border-BlackBackground col-span-1 row-span-3 bg-white p-6 rounded-lg shadow-md max-w-screen-md mx-auto">
+      class="bg-whiteBackground border border-BlackBackground col-span-1 row-span-3 bg-white p-6 rounded-lg shadow-md max-w-screen-md mx-auto font-roboto">
       <div class="mt-6">
 
         <input type="text" placeholder="Nom Pis" class="border border-gray-300 rounded p-2 w-full">
@@ -96,7 +90,7 @@
         <input type="text" placeholder="Condicions" class="border border-gray-300 rounded p-2 w-full mt-4">
       </div>
       <div class="mt-6">
-        <p class="text-darkGreen font-semibold">Restricions:</p>
+        <p class="text-darkGreen font-roboto">Restricions:</p>
         <div class="flex items-center mt-2 space-x-4">
           <div class="flex items-center">
             <img src="../App/img/sin-mascotas.png" class="w-10 h-10">
@@ -116,11 +110,11 @@
 
       <div class="flex justify-end space-x-4  mt-4">
         <button class="px-6 py-2 bg-darkGreen rounded-md hover:bg-darkGreen">Denegar</button>
-        <button
-            class="px-6 py-2 bg-darkGreen text-white rounded-md hover:bg-darkGreen">Acceptar</button>
-    </div>
+        <button class="px-6 py-2 bg-darkGreen text-white rounded-md hover:bg-darkGreen">Acceptar</button>
+      </div>
     </div>
   </div>
   </div>
 </body>
+
 </html>

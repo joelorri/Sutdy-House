@@ -13,19 +13,18 @@ module.exports = {
       'BlackBackground': '#000',
       'blueBackground': '#0084FF',
       'redBackground': '#FF0000',
+      'whiteContainer': '#fafafa',
+      'grey': '#d4d4d4',
+      'darkGrey': '#a1a1a1'
+
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-
-      //    /* Aplicar la fuente Rubik Mono One */
-    // .font-rubik {
-    //   font-family: 'Rubik Mono One', sans-serif;
-    // }
-    // /* Estilo para el borde dashed */
-    // .border-dashed-custom {
-    //   border-bottom: 4px dashed #1ABC9C; /* Cambiar el color del borde aquí */
-    // }
+      rubik: ['Rubik Mono One', 'sans-serif'],
+      rosarivo: ['Rosarivo', 'sans-serif'],
+      roboto_Medium: ['Roboto-medium', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif']
     },
   },
   plugins: [],
