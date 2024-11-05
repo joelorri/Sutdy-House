@@ -5,14 +5,14 @@ export default defineConfig({
   root: "./", // Directori root de Vite
   base: "./", // Rutes relatives per als assets
   build: {
-    outDir: "dist", // Directori de sortida per al build
+    outDir: "dist", 
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "App/MainMenu.html"),
-         CreaHabitatge: path.resolve(__dirname, "App/CreaHabitatge.html"),
-         EditaHab: path.resolve(__dirname, "App/EditaHabitatge.html"),
-         Edituser: path.resolve(__dirname, "App/EditUser.html"),
-         ElsMeusHabs: path.resolve(__dirname, "App/ElsMeusHabitatges.html"),
+        index: path.resolve(__dirname, "App/MainMenu.html"),
+        CreaHabitatge: path.resolve(__dirname, "App/CreaHabitatge.html"),
+        EditaHab: path.resolve(__dirname, "App/EditaHabitatge.html"),
+        Edituser: path.resolve(__dirname, "App/EditUser.html"),
+        ElsMeusHabs: path.resolve(__dirname, "App/ElsMeusHabitatges.html"),
         MenuHab: path.resolve(__dirname, "App/MenuHabitatge.html"),
         notiUsuari: path.resolve(__dirname, "App/notificaUsuari.html"),
         Peticio: path.resolve(__dirname, "App/PeticioHabitatge.html"),
