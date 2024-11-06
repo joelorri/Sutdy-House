@@ -8,7 +8,8 @@ export default defineConfig({
     outDir: "dist", 
     rollupOptions: {
       input: {
-        index: path.resolve(__dirname, "App/MainMenu.html"),
+        index: path.resolve(__dirname, "index.html"),
+        main: path.resolve(__dirname, "App/MainMenu.html"),
         CreaHabitatge: path.resolve(__dirname, "App/CreaHabitatge.html"),
         EditaHab: path.resolve(__dirname, "App/EditaHabitatge.html"),
         Edituser: path.resolve(__dirname, "App/EditUser.html"),
