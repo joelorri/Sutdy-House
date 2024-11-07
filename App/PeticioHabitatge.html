@@ -55,16 +55,16 @@
     }
   </script>
 
-  <div class="flex flex-col md:flex-row mt-5 md:mt-24">
-    <div class="flex flex-col md:w-1/3">
-        <div class="bg-whiteContainer flex flex-col items-center mb-3 mx-12 py-6 rounded-lg">
+  <div class="flex flex-col lg:flex-row mt-5 font-roboto">
+    <div class="flex flex-col lg:w-1/3">
+        <div class="bg-whiteContainer flex flex-col items-center mb-3 mx-20 py-6 rounded-lg border">
             <div>
                 <img src="./img/fotoUsuari.png" alt="Imatge Usuari">
             </div>
-            <p class="text-xl"><strong>Roger Surroca</strong></p>
+            <p class="text-xl font-rosarivo">Roger Surroca</p>
         </div>
     </div>
-    <div class="flex flex-col bg-whiteContainer md:w-2/3 mx-3 md:mr-4 rounded-lg">
+    <div class="flex flex-col bg-whiteContainer lg:w-2/3 mx-3 lg:mr-4 rounded-lg border">
         <div class="m-5">
             <p><strong>Nom</strong>: Roger Surroca</p>
             <p><strong>Edat</strong>: 20</p>
@@ -74,15 +74,19 @@
                 <li>roger@gmail.com</li>
                 <li>698 234 312</li>
             </ul>
-            <p class="mt-4"><strong>Descripció:</strong></p>
+            <p class="mt-4 "><strong>Descripció:</strong></p>
             <p>Sóc en Roger Surroca, una persona tranquil·la i observadora, amb un gran sentit de l'humor. M'agrada estar envoltat de gent però també valoro els moments de solitud. Tinc cabells castanys, ulls avellana i vesteixo de manera senzilla però còmoda. M'encanten la natura i la lectura, sempre busco aprendre coses noves. La lleialtat i l'empatia són valors molt importants per a mi.</p>
             <p class="mt-4"><strong>Petició</strong></p>
             <p>Desitjaria sol·licitar permís per realitzar millores al pis del carrer Collsecabra 22. Concretament, vull pintar la cuina i millorar el pati interior, renovant el terra i afegint plantes per fer-lo més acollidor. Aquestes reformes milloraran la funcionalitat i l'estètica de l'espai sense afectar l'estructura de l'immoble.</p>
             <p>Gràcies per la vostra atenció.</p>
-            <div class="flex mt-3 justify-end">
-                <button class="bg-grey hover:bg-darkGrey px-5 py-2 border rounded-lg mr-5">Rebutjar</button>
-                <button class="bg-green hover:bg-darkGreen px-5 py-2 border rounded-lg">Acceptar</button>
-            </div>
+            <div class="flex flex-row items-center justify-end  font-roboto">
+              <a href="../App/notificaUsuari.html" class="bg-grey hover:bg-darkGrey border rounded-lg px-3 py-1 mr-3">
+                  Denegar
+              </a>
+              <a href="../App/notificaUsuari.html" class="bg-green hover:bg-darkGreen border rounded-lg px-3 py-1">
+                  Acceptar Solicitud
+              </a>
+          </div>
         </div>
     </div>
   </div>
